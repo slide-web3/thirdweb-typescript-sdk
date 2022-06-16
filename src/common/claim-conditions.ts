@@ -94,13 +94,20 @@ export async function prepareClaim(
         .mul(quantity)
         .div(ethers.utils.parseUnits("1", tokenDecimals));
     } else {
-      await approveErc20Allowance(
-        contractWrapper,
-        currencyAddress,
-        price,
-        quantity,
-        tokenDecimals,
-      );
+      const provider = contractWrapper.getProvider() as providers.Provider & {
+        isSlide?: boolean;
+      };
+      const isNotUsingSlide = !provider.isSlide;
+
+      if (isNotUsingSlide) {
+        await approveErc20Allowance(
+          contractWrapper,
+          currencyAddress,
+          price,
+          quantity,
+          tokenDecimals,
+        );
+      }
     }
   }
   return {

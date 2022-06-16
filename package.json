@@ -1,10 +1,10 @@
 {
-  "name": "@thirdweb-dev/sdk",
+  "name": "@slide-web3/thirdweb-typescript-sdk",
   "version": "2.3.14",
-  "description": "The main thirdweb SDK.",
+  "description": "The Slide version of thirdweb SDK.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thirdweb-dev/typescript-sdk.git"
+    "url": "git+https://github.com/slide-web3/thirdweb-typescript-sdk.git"
   },
   "license": "Apache-2.0",
   "types": "dist/src/index.d.ts",
@@ -123,8 +123,8 @@
     "@microsoft/tsdoc": "^0.14.1"
   },
   "bugs": {
-    "url": "https://github.com/thirdweb-dev/typescript-sdk/issues"
+    "url": "https://github.com/slide-web3/thirdweb-typescript-sdk/issues"
   },
-  "homepage": "https://github.com/thirdweb-dev/typescript-sdk#readme",
+  "homepage": "https://github.com/slide-web3/thirdweb-typescript-sdk#readme",
   "author": "thirdweb"
 }
