@@ -5,8 +5,7 @@
 </p>
 <h1 align="center">thirdweb TypeScript SDK</h1>
 <p align="center">
-<a href="https://www.npmjs.com/package/@thirdweb-dev/sdk"><img src="https://img.shields.io/github/package-json/v/thirdweb-dev/typescript-sdk?color=red&label=npm&logo=npm" alt="npm version"/></a>
-<a href="https://github.com/thirdweb-dev/typescript-sdk/actions"><img alt="Build Status" src="https://github.com/thirdweb-dev/typescript-sdk/actions/workflows/tests.yml/badge.svg"/></a>
+<a href="https://www.npmjs.com/package/@slide-web3/thirdweb-typescript-sdk"><img src="https://img.shields.io/github/package-json/v/slide-web3/thirdweb-typescript-sdk?color=red&label=npm&logo=npm" alt="npm version"/></a>
 <a href="https://discord.gg/thirdweb"><img alt="Join our Discord!" src="https://img.shields.io/discord/834227967404146718.svg?color=7289da&label=discord&logo=discord&style=flat"/></a>
 
 </p>
@@ -18,13 +17,13 @@
 Install the latest version of the SDK with `npm`:
 
 ```shell
-npm install @thirdweb-dev/sdk ethers
+npm install @slide-web3/thirdweb-typescript-sdk ethers
 ```
 
 or with `yarn`:
 
 ```shell
-yarn add @thirdweb-dev/sdk ethers
+yarn add @slide-web3/thirdweb-typescript-sdk ethers
 ```
 
 ## Quick start
@@ -41,7 +40,7 @@ This will allow you to query data from any contract with no additional setup.
 
 ```javascript title="my_script.js"
 // my_script.js
-import { ThirdwebSDK } from "@thirdweb-dev/sdk";
+import { ThirdwebSDK } from "@slide-web3/thirdweb-typescript-sdk";
 
 // instantiate the SDK in read-only mode (our example is running on `polygon` here)
 // all major chains and testnets are supported (e.g. `mainnet`, `rinkeby`, `goerli`, 'polygon', 'mumbai', etc.)
@@ -76,7 +75,7 @@ Here's how to provide your own private key to the SDK to perform transactions wi
 
 ```javascript title="my_script.js"
 // my_script.js
-import { ThirdwebSDK } from "@thirdweb-dev/sdk";
+import { ThirdwebSDK } from "@slide-web3/thirdweb-typescript-sdk";
 
 // load your private key in a secure way (env variable, never commited to git)
 const privateKey = process.env.PRIVATE_KEY;
